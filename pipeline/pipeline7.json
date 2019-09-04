@@ -4,6 +4,7 @@
 		"activities": [
 			{
 				"name": "Copy Data1",
+				"description": "adasdd",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
