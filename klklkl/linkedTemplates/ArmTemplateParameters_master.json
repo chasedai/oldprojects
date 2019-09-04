@@ -1,0 +1,135 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "klklkl"
+		},
+		"integrationRuntime_integrationRuntime1": {
+			"value": "integrationRuntime1"
+		},
+		"integrationRuntime_testSSISIR": {
+			"value": "testSSISIR"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage3_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage4_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage5_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage6_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStoragegen2_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"SqlServer1_connectionString": {
+			"value": ""
+		},
+		"isolatedBlobStorageLinkedService_connectionString": {
+			"value": ""
+		},
+		"ncuBlob_connectionString": {
+			"value": ""
+		},
+		"test4adf_connectionString": {
+			"value": ""
+		},
+		"test4csv_connectionString": {
+			"value": ""
+		},
+		"test4gzip_connectionString": {
+			"value": ""
+		},
+		"AzureBlob1_properties_typeProperties_fileName": {
+			"value": "Unnamed"
+		},
+		"AzureBlob1_properties_typeProperties_folderPath": {
+			"value": "u-sql1"
+		},
+		"AzureBlob2_properties_typeProperties_fileName": {
+			"value": ""
+		},
+		"AzureBlob2_properties_typeProperties_folderPath": {
+			"value": "test"
+		},
+		"AzureBlob3_properties_typeProperties_fileName": {
+			"value": "nameList.txt"
+		},
+		"AzureBlob3_properties_typeProperties_folderPath": {
+			"value": "test4gzip"
+		},
+		"AzureBlob4_properties_typeProperties_folderPath": {
+			"value": "test4adla"
+		},
+		"AzureBlob5_properties_typeProperties_fileName": {
+			"value": ""
+		},
+		"AzureBlob5_properties_typeProperties_folderPath": {
+			"value": "test4adla"
+		},
+		"AzureDataLakeStorageFile1_properties_typeProperties_folderPath": {
+			"value": "@substring(utcnow(),0,3)"
+		},
+		"isolatedBlobstorage_properties_typeProperties_fileName": {
+			"value": ""
+		},
+		"isolatedBlobstorage_properties_typeProperties_folderPath": {
+			"value": "test4adla"
+		},
+		"AzureDataLakeStoragegen2_properties_typeProperties_url": {
+			"value": "https://kljjkljkkl.dfs.core.windows.net"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://hkkjhh.azuredatalakestore.net/webhdfs/v1"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_tenant": {
+			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_subscriptionId": {
+			"value": "f9a5dd54-e6b5-4df3-b8b2-ad97e5a233c1"
+		},
+		"AzureDataLakeStore1_properties_typeProperties_resourceGroupName": {
+			"value": "adlawrite2eventhub"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://test4kv.vault.azure.net/"
+		},
+		"newCSV arrived_properties_typeProperties_scope": {
+			"value": "/subscriptions/f9a5dd54-e6b5-4df3-b8b2-ad97e5a233c1/resourceGroups/adlawrite2eventhub/providers/Microsoft.Storage/storageAccounts/test4blobv2"
+		},
+		"trigger2_properties_typeProperties_scope": {
+			"value": "/subscriptions/f9a5dd54-e6b5-4df3-b8b2-ad97e5a233c1/resourceGroups/adlawrite2eventhub/providers/Microsoft.Storage/storageAccounts/test4v2trigger2"
+		},
+		"testSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"value": "test4krishna.database.windows.net"
+		},
+		"testSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"value": "mirshost"
+		},
+		"testSSISIR_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
+			"value": ""
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
