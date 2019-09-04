@@ -1,0 +1,16 @@
+{
+	"name": "AzureBlob1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "isolatedBlobStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"fileName": "Unnamed",
+			"folderPath": "u-sql1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

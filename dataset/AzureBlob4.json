@@ -1,0 +1,15 @@
+{
+	"name": "AzureBlob4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "isolatedBlobStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"folderPath": "test4adla"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

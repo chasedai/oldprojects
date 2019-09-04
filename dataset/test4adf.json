@@ -1,0 +1,25 @@
+{
+	"name": "test4adf",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "test4adf",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "street",
+				"type": "varchar"
+			},
+			{
+				"name": "city",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[test4adf]"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

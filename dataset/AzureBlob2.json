@@ -1,0 +1,16 @@
+{
+	"name": "AzureBlob2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "isolatedBlobStorageLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureBlob",
+		"typeProperties": {
+			"fileName": "",
+			"folderPath": "test"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

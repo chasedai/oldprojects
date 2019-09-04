@@ -1,0 +1,24 @@
+{
+	"name": "newCSV arrived",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/test4adf/",
+			"blobPathEndsWith": ".csv",
+			"scope": "/subscriptions/f9a5dd54-e6b5-4df3-b8b2-ad97e5a233c1/resourceGroups/adlawrite2eventhub/providers/Microsoft.Storage/storageAccounts/test4blobv2",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
