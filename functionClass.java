@@ -27,7 +27,12 @@ public class functionClass {
 		try {
 			CsvReader readerAccident = new CsvReader("Accidents0515.csv");
 			readerAccident.readHeaders();
+			Class.forName(JDBC_DRIVER);
 
+			System.out.println("Preparing to write a new record in Accidents table");
+			conn = (Connection) DriverManager.getConnection(DB_URL, USER, PASS);
+
+			PreparedStatement pst = (PreparedStatement) conn.prepareStatement(sql);
 			while (readerAccident.readRecord()) {
 				String accident_Index = readerAccident.get(0); // get(String) doesn't work for the first column, have no
 																// clue at the moment. using get(int) as a workaround
@@ -41,12 +46,7 @@ public class functionClass {
 				 */
 
 				// load JDBC driver
-				Class.forName(JDBC_DRIVER);
-
-				System.out.println("Preparing to write a new record in Accidents table");
-				conn = (Connection) DriverManager.getConnection(DB_URL, USER, PASS);
-
-				PreparedStatement pst = (PreparedStatement) conn.prepareStatement(sql);
+				
 				pst.setString(1, accident_Index);
 				pst.setInt(2, Integer.parseInt(day_of_Week));
 				pst.setString(3, accident_Time);
@@ -56,11 +56,11 @@ public class functionClass {
 				System.out.println("Successfully wrote a new record to Accidents table");
 				System.out.println("Accident ID:" + accident_Index + " completed");
 				System.out.println("==============================================");
-				pst.close();
-				conn.close();
+				
 
 			}
-
+			pst.close();
+			conn.close();
 			return true;
 
 		} catch (Exception e) {
@@ -77,7 +77,11 @@ public class functionClass {
 
 			CsvReader readerVehicles = new CsvReader("Vehicles0515.csv");
 			readerVehicles.readHeaders();
+			Class.forName(JDBC_DRIVER);
+			System.out.println("Preparing to write a new record in Vehicles table");
+			conn = (Connection) DriverManager.getConnection(DB_URL, USER, PASS);
 
+			PreparedStatement pst = (PreparedStatement) conn.prepareStatement(sql);
 			while (readerVehicles.readRecord()) {
 				String accident_Index = readerVehicles.get(0);
 				String vehicle_Type = readerVehicles.get("Vehicle_Type");
@@ -89,11 +93,7 @@ public class functionClass {
 				 */
 
 				// load JDBC driver
-				Class.forName(JDBC_DRIVER);
-				System.out.println("Preparing to write a new record in Vehicles table");
-				conn = (Connection) DriverManager.getConnection(DB_URL, USER, PASS);
-
-				PreparedStatement pst = (PreparedStatement) conn.prepareStatement(sql);
+				
 				pst.setString(1, accident_Index);
 				pst.setInt(2, Integer.parseInt(vehicle_Type));
 				pst.setInt(3, Integer.parseInt(sex_of_Driver));
@@ -102,10 +102,10 @@ public class functionClass {
 				System.out.println("Successfully wrote a new record to Accidents table");
 				System.out.println("Accident ID:" + accident_Index + " completed");
 				System.out.println("==============================================");
-				pst.close();
-				conn.close();
+				
 			}
-
+			pst.close();
+			conn.close();
 			return true;
 
 		} catch (Exception e) {
